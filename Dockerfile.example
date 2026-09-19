@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+
+# Устанавливаем библиотеку termcolor
+RUN pip install termcolor
+
+WORKDIR /app
+COPY . .
+
+CMD ["python", "docker_example.py"]
